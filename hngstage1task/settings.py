@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-jy&8*huxm9x0mv0mo#mi4-sy(s%e())kn4387qgkzopl%@ep!i
 DEBUG = True
 
 # ALLOWED_HOSTS = ['.herokuapp.com','localhost', '127.0.0.1']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.herokuapp.com','localhost', '127.0.0.1']
 
 
 
@@ -55,8 +55,8 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-# CORS_ALLOW_ALL_ORIGINS = True
-# CORS_ORIGIN_WHITELIST = ALLOWED_HOSTS
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ORIGIN_WHITELIST = ALLOWED_HOSTS
 
 ROOT_URLCONF = 'hngstage1task.urls'
 
